@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+#seccion1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cornsilk;
+    border: 10px solid blue;
+    padding: 1%;
+}
+
+#imgparte1 {
+    width: 50%;
+}
+
