@@ -1,19 +1,31 @@
-const img1 = document.querySelector('#imgparte1')
+// Inicio ejercicio 1
 
-/* img1.addEventListener('click', () => {
-if (img1 == 'border 0') {
-    img1.border.style('solid, red, 2px')
-}else {
-    img1.border.style(0)
-}
-}) intente intervenir la imagen directamente, comparando el contenedor en vez del borde
- */ 
+const img1 = document.querySelector('#imgparte1')
 
 img1.addEventListener('click', () => {
     if (img1.style.border === '0px') {
-      img1.style.border = '2px solid red';
+        img1.style.border = '2px solid red';
     } else {
-      img1.style.border = '0';
+        img1.style.border = '0';
     }
-  });
+});
+
+// Inicio ejercicio 2
+
+const input1 = document.querySelector('#uno').value
+const input2 = document.querySelector('#dos').value
+const input3 = document.querySelector('#tres').value
+
+const suma = input1+input2+input3
+
+const respuesta = document.querySelector('#respuesta')
+const btnok = document.querySelector('#btnok')
+
+btnok.addEventListener('click', () => {
+    if(suma>=10) {
+respuesta.innerHTML = 'llevas demasiados stickers'
+    } else{
+respuesta.innerHTML = 'llevas ' + suma + 'stickers'
+   }
+})
 
